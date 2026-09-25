@@ -80,4 +80,29 @@ largerValue=Math.Max(firstValue,secondValue);
 Console.WriteLine(largerValue);
 ```
 
-### Les conditions
+## Les conditions `if`, `else`, `else if` et opérateurs logiques `&&` `||`
+
+[Les conditions `if`, `else`, `else if` et opérateurs logiques `&&` `||`](https://learn.microsoft.com/fr-fr/training/modules/csharp-if-elseif-else/1-introduction)
+
+## Stocker et parcourir des séquences de données à l'aide de tableaux et de l'instruction foreach en C#
+
+### Iteration foreach
+
+```c#
+string[] fraudulentOrderIDs = ["A123", "B456", "C789"];
+
+string[] fraudulentOrderIDsoldSyntaxe = { "A123", "B456", "C789" };
+fraudulentOrderIDs[0] = "F000";
+
+Console.WriteLine($"Reassign First: {fraudulentOrderIDsoldSyntaxe[2]}");
+Console.WriteLine($"There are {fraudulentOrderIDsoldSyntaxe.Length} fraudulent orders to process.");
+Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
+
+foreach (string fraudulentOrderID in fraudulentOrderIDs)
+{
+    Console.WriteLine(fraudulentOrderID);
+}
+```
+
+Voir suite sur [https://learn.microsoft.com/fr-fr/training/modules/csharp-for](https://learn.microsoft.com/fr-fr/training/modules/csharp-for)
